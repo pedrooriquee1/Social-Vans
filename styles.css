@@ -18,7 +18,7 @@
   --ink-soft: #4d5a54;
   --line: #e2e6e1;
 
-  --font: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font: "Sora", system-ui, -apple-system, "Segoe UI", sans-serif;
   --radius-sm: 8px;
   --radius: 14px;
   --radius-lg: 24px;
@@ -680,3 +680,21 @@ a { color: inherit; text-decoration: none; }
 .plan:not(.plan--featured) { background: #fff; }
 .steps__notch { background: var(--bg); }
 .banner__bg::after { top: 14%; }
+
+/* Acabamento mais sóbrio: menos efeitos genéricos de template */
+:root { --radius-sm: 6px; --radius: 10px; --radius-lg: 16px; }
+.hero__shape, .steps__notch, .split__lines { display: none; }
+.ph { background-image: linear-gradient(160deg, var(--green-700), var(--green-900)); background-size: cover; }
+.btn:hover, .card:hover, .step:hover { transform: none; }
+.btn--primary { box-shadow: none; }
+.btn--ghost { padding: 10px 16px; }
+.btn__icon, .btn__icon--dark { width: auto; height: auto; background: none; color: inherit; border-radius: 0; }
+.cards-3 { gap: 40px; }
+.card { background: transparent; border: 0; border-top: 2px solid var(--green-800); border-radius: 0; padding: 20px 0 0; }
+.card:hover { box-shadow: none; border-color: var(--lime-500); }
+.card__icon { display: block; width: auto; height: auto; background: none; border-radius: 0; color: var(--lime-500); font-size: 14px; margin-bottom: 10px; }
+.eyebrow { background: none; padding: 0; border-radius: 0; color: var(--lime-500); letter-spacing: .04em; }
+.steps { border-radius: 0; }
+.step { background: none; border: 0; border-top: 1px solid rgba(255,255,255,.2); border-radius: 0; padding: 24px 0 0; }
+.step:hover { background: none; }
+.step__num { display: block; width: auto; height: auto; background: none; border-radius: 0; color: var(--lime-400); font-size: 32px; line-height: 1; margin-bottom: 12px; }
